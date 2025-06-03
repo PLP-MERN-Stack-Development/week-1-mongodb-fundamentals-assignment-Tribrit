@@ -26,18 +26,17 @@ Ensure the following are installed on your machine:
 
 ### 2. Clone the Repository
 
+```bash
+git clone (https://github.com/PLP-MERN-Stack-Development/week-1-mongodb-fundamentals-assignment-Tribrit.git)
+```
 
-git clone <your-github-classroom-repo-url>
-cd <repo-folder>
+3. Install MongoDB (Choose one)
+Option A: Local Installation
+Download and install MongoDB from the official website
 
-### 3. Install MongoDB (Choose one)
-
-#### Option A: Local Installation
-
-- Download and install MongoDB from the [official website](https://www.mongodb.com/try/download/community).
-- Start MongoDB locally using:
-
+Start MongoDB locally using:
 mongod
+
 
 Option B: MongoDB Atlas (Cloud)
 Sign up at MongoDB Atlas
@@ -48,26 +47,54 @@ Whitelist your IP address
 
 Get your connection string and use it in your application or Compass
 
+4. Run the Insert Script
+To populate your database with sample book data:
 
----
+node insert_books.js
+This creates a database named library and a books collection with sample documents.
 
-### ❌ Incorrect Example (not inside Markdown):
+Working with the Assignment
+Files Included
+insert_books.js – Script to populate MongoDB with book data
 
-When pasting content without backticks (`) for code blocks or without the proper Markdown formatting (like `#`, `-`, or `[Link](url)`), it renders as plain text — which is what you're experiencing.
+queries.js – MongoDB queries (CRUD, advanced, aggregation, indexing)
 
----
+Week1-Assignment.md – Assignment instructions
 
-### ✅ Fix
+README.md – Setup and instructions
 
-To make sure everything stays **inside the Markdown**, use triple backticks (```) for blocks of code and list formatting (`-` or `1.`) for instructions.
+screenshot.png – Screenshot showing sample data
 
-If you're pasting it into `README.md`, **use a Markdown-capable editor** like:
+How to Run Queries
+You can run queries using:
 
-- VS Code
-- GitHub web editor
-- Obsidian
-- StackEdit
+Option 1: MongoDB Shell (mongosh)
+mongosh
+use library
+Run your queries directly inside the shell.
 
-If you're still seeing it break after pasting into your GitHub repository, **ensure the file is named exactly `README.md` (case-sensitive)** and is rendered on GitHub or any Markdown-compatible viewer.
+Option 2: Node.js Script
+Write your queries in queries.js and run:
 
-Would you like me to give you the entire corrected version again in a plain copy-paste block?
+node queries.js
+Option 3: MongoDB Compass
+Connect using your connection string
+
+Navigate to the library > books collection
+
+Use the GUI to explore data and run queries
+
+Screenshot
+Example output of books collection:
+
+
+Notes
+Indexed fields were tested using .explain() to compare query performance.
+
+All assignment tasks are complete and pushed to the GitHub Classroom repository.
+
+Author
+Britney Temu
+MongoDB Fundamentals – Week 1 Assignment
+
+
