@@ -37,7 +37,6 @@ cd <repo-folder>
 - Download and install MongoDB from the [official website](https://www.mongodb.com/try/download/community).
 - Start MongoDB locally using:
 
-```bash
 mongod
 
 Option B: MongoDB Atlas (Cloud)
