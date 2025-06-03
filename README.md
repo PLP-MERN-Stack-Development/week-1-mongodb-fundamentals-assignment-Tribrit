@@ -26,7 +26,7 @@ Ensure the following are installed on your machine:
 
 ### 2. Clone the Repository
 
-```bash
+
 git clone <your-github-classroom-repo-url>
 cd <repo-folder>
 
